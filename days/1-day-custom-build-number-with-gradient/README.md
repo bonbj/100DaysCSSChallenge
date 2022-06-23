@@ -7,6 +7,6 @@
 
     (pt)
 ### Um começo fácil para o desafio com um número de compilação personalizado com gradiente.
-[see aqui](https://bonbj.github.io/100DaysCSSChallenge/days/1-day-custom-build-number-with-gradient)
+[veja aqui](https://bonbj.github.io/100DaysCSSChallenge/days/1-day-custom-build-number-with-gradient)
 
 ![image exemple](../../src/banner/day-1-banner.png)
