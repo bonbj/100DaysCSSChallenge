@@ -1,4 +1,4 @@
-# Day #1
+# Day #2
 
     (en)
 ### Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher.
