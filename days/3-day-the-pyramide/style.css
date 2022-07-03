@@ -23,6 +23,7 @@ section {
     width: 12rem;
     position: relative;
     border-radius: 50%;
+    animation: restart 3s infinite;
 }
 
 .display-flex {
@@ -42,13 +43,21 @@ section {
     z-index: 5;
 }
 
+.orbit {
+    position: absolute;
+    top: 80px;
+    right: 85px;
+    animation: orbit 3s infinite;
+}
+
 .sun {
     position: absolute;
     width: 2.5rem;
     height: 2.5rem;
     background-color: #FFEF00;
     border-radius: 50%;
-    top: 50px
+    top: -40px;
+    left: -100px;
 }
 
 .ground {
@@ -58,4 +67,91 @@ section {
     width: 200px;
     bottom: 0;
     right: 0;
+    z-index: 3;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.pyramid {
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    top: 77px;
+    right: 40px;
+    animation: pyramid-change-color 3s infinite;
+}
+
+.pyramid-shadow {
+    border-top: 67px solid transparent;
+    top: 71px;
+    right: 46px;
+    transform: rotate(-13deg);
+    animation: pyramid-shadow-change-color 3s infinite;
+}
+
+.pyramid-shadow-bottom {
+    top: 132px;
+    right: 40px;
+    z-index: 4;
+    animation: pyramid-shadow-botom 3s infinite;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(160deg);
+    }
+}
+
+@keyframes restart {
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pyramid-change-color {
+    0% {
+        border-bottom: 55px solid #EDEDED;
+    }
+
+    100% {
+        border-bottom: 55px solid #838c9b;
+    }
+}
+
+@keyframes pyramid-shadow-change-color {
+    0% {
+        border-left: 42px solid #838c9b;
+    }
+
+    100% {
+        border-left: 42px solid #EDEDED;
+    }
+}
+
+@keyframes pyramid-shadow-botom {
+    0% {
+        border-left: 86px solid transparent;
+        border-right: 24px solid transparent;
+        border-top: 30px solid #BAAC5B;
+    }
+
+    50% {
+        border-top: 10px solid #BAAC5B;
+    }
+
+    100% {
+        border-left: 24px solid transparent;
+        border-right: 86px solid transparent;
+        border-top: 30px solid #BAAC5B;
+    }
 }
