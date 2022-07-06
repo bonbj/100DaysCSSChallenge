@@ -9,4 +9,4 @@
 ### Usado em quase todos os sites até agora, simples, mas impressionantemente animado, torna-se um verdadeiro atrativo.
 [veja aqui](https://bonbj.github.io/100DaysCSSChallenge/days/2-day-menu-icon)
 
-![image exemple](../../src/banner/day-2-banner.png)
+![image exemple](../../src/banner/day-2-banner.gif)
