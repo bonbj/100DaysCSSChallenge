@@ -125,3 +125,46 @@ p {
     margin-top: 0.4rem;
     color: #949494;
 }
+
+.points {
+    position: relative;
+}
+
+.points > div {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+}
+
+/*! every else there can be changed for javaScript or sass */
+
+#point-blue-1 { left: 8px; top: -20px; background-color: #7ba2ff;}
+#point-blue-2 { left: 50px; top: -28px; background-color: #7ba2ff;}
+#point-blue-3 { left: 92px; top: -16px; background-color: #7ba2ff;}
+#point-blue-4 { left: 134px; top: -25px; background-color: #7ba2ff;}
+#point-blue-5 { left: 174px; top: -23px; background-color: #7ba2ff;}
+#point-blue-6 { left: 210px; top: -10px; background-color: #7ba2ff;}
+#point-blue-7 { left: 250px; top: -20px; background-color: #7ba2ff;}
+
+#line-blue-1 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 47px; transform: rotate(-11deg); top: -22px; left: 8px;}
+#line-blue-2 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 43px; transform: rotate(16deg); top: -20px; left: 52px;}
+#line-blue-3 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 43px; transform: rotate(-12deg); top: -19px; left: 94px;}
+#line-blue-4 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 43px; transform: rotate(3deg); top: -22px; left: 135px;}
+#line-blue-5 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 36px; transform: rotate(20deg); top: -15px; left: 177px;}
+#line-blue-6 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 44px; transform: rotate(-14deg); top: -13px; left: 212px;}
+
+#point-red-1 { left: 8px; top: -38px; background-color: #fa7373;}
+#point-red-2 { left: 50px; top: -60px; background-color: #fa7373;}
+#point-red-3 { left: 92px; top: -55px; background-color: #fa7373;}
+#point-red-4 { left: 134px; top: -60px; background-color: #fa7373;}
+#point-red-5 { left: 174px; top: -46px; background-color: #fa7373;}
+#point-red-6 { left: 210px; top: -35px; background-color: #fa7373;}
+#point-red-7 { left: 250px; top: -60px; background-color: #fa7373;}
+
+#line-red-1 { height: 2px; border-radius: 0; background-color: #fa7373; width: 47px; transform: rotate(-28deg); top: -47px; left: 8px;}
+#line-red-2 { height: 2px; border-radius: 0; background-color: #fa7373; width: 43px; transform: rotate(7deg); top: -56px; left: 52px;}
+#line-red-3 { height: 2px; border-radius: 0; background-color: #fa7373; width: 43px; transform: rotate(-7deg); top: -56px; left: 94px;}
+#line-red-4 { height: 2px; border-radius: 0; background-color: #fa7373; width: 43px; transform: rotate(19deg); top: -51px; left: 135px;}
+#line-red-5 { height: 2px; border-radius: 0; background-color: #fa7373; width: 36px; transform: rotate(17deg); top: -38px; left: 177px;}
+#line-red-6 { height: 2px; border-radius: 0; background-color: #fa7373; width: 45px; transform: rotate(-32deg); top: -46px; left: 212px;}
