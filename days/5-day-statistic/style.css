@@ -137,6 +137,18 @@ p {
     border-radius: 50%;
 }
 
+.box-blue {
+    height: 20px;
+    width: 20px;
+    background-color: #7ba2ff;
+}
+
+.box-red {
+    height: 20px;
+    width: 20px;
+    background-color: #fa7373;
+}
+
 /*! every else there can be changed for javaScript or sass */
 
 #point-blue-1 { left: 8px; top: -20px; background-color: #7ba2ff;}
