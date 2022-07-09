@@ -141,12 +141,14 @@ p {
     height: 20px;
     width: 20px;
     background-color: #7ba2ff;
+    visibility: hidden;
 }
 
 .box-red {
     height: 20px;
     width: 20px;
     background-color: #fa7373;
+    visibility: hidden;
 }
 
 /*! every else there can be changed for javaScript or sass */
