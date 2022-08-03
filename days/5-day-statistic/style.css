@@ -137,18 +137,60 @@ p {
     border-radius: 50%;
 }
 
-.box-blue {
-    height: 20px;
-    width: 20px;
-    background-color: #7ba2ff;
+.point {
+    cursor: pointer;
+}
+
+.point-blue-data {
+    position: absolute;
+    height: 15px; 
+    width: 15px; 
+    background-color: #7ba2ff; 
+    color: #f2f2f2; 
+    border-radius: 2px; 
+    font-size: 8px;
+    top: -18px;
+    left: -4px;
+    z-index: 3;
     visibility: hidden;
 }
 
-.box-red {
-    height: 20px;
-    width: 20px;
-    background-color: #fa7373;
+.point-blue-data::after {
+	transform: rotate(45deg);
+    position: absolute;
+	display: block;
+	content: '';
+	height: 4px;
+	width: 4px;
+    background-color: #7ba2ff;
+    bottom: -2px;
+    z-index: 2;
+}
+
+.point-red-data {
+    position: absolute;
+    height: 15px; 
+    width: 19px; 
+    background-color: #fa7373; 
+    color: #f2f2f2; 
+    border-radius: 2px; 
+    font-size: 8px;
+    top: -18px;
+    left: -6px;
+    z-index: 3;
     visibility: hidden;
+}
+
+.point-red-data::after {
+	transform: rotate(45deg);
+    position: absolute;
+	display: block;
+	content: '';
+	height: 4px;
+	width: 4px;
+    background-color: #fa7373;
+    bottom: -2px;
+    z-index: 2;
 }
 
 /*! every else there can be changed for javaScript or sass */
@@ -160,6 +202,14 @@ p {
 #point-blue-5 { left: 174px; top: -23px; background-color: #7ba2ff;}
 #point-blue-6 { left: 210px; top: -10px; background-color: #7ba2ff;}
 #point-blue-7 { left: 250px; top: -20px; background-color: #7ba2ff;}
+
+#point-blue-1:hover .point-blue-data { visibility: visible;}
+#point-blue-2:hover .point-blue-data { visibility: visible;}
+#point-blue-3:hover .point-blue-data { visibility: visible;}
+#point-blue-4:hover .point-blue-data { visibility: visible;}
+#point-blue-5:hover .point-blue-data { visibility: visible;}
+#point-blue-6:hover .point-blue-data { visibility: visible;}
+#point-blue-7:hover .point-blue-data { visibility: visible;}
 
 #line-blue-1 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 47px; transform: rotate(-11deg); top: -22px; left: 8px;}
 #line-blue-2 { height: 2px; border-radius: 0; background-color: #7ba2ff; width: 43px; transform: rotate(16deg); top: -20px; left: 52px;}
@@ -175,6 +225,14 @@ p {
 #point-red-5 { left: 174px; top: -46px; background-color: #fa7373;}
 #point-red-6 { left: 210px; top: -35px; background-color: #fa7373;}
 #point-red-7 { left: 250px; top: -60px; background-color: #fa7373;}
+
+#point-red-1:hover .point-red-data { visibility: visible;}
+#point-red-2:hover .point-red-data { visibility: visible;}
+#point-red-3:hover .point-red-data { visibility: visible;}
+#point-red-4:hover .point-red-data { visibility: visible;}
+#point-red-5:hover .point-red-data { visibility: visible;}
+#point-red-6:hover .point-red-data { visibility: visible;}
+#point-red-7:hover .point-red-data { visibility: visible;}
 
 #line-red-1 { height: 2px; border-radius: 0; background-color: #fa7373; width: 47px; transform: rotate(-28deg); top: -47px; left: 8px;}
 #line-red-2 { height: 2px; border-radius: 0; background-color: #fa7373; width: 43px; transform: rotate(7deg); top: -56px; left: 52px;}
