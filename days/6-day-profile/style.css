@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #786450;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden
+}
+
+main {
+    width: 25rem;
+    height: 25rem;
+    background-image: linear-gradient(to top right,#EEBD6C , #CB7D4F);
+    position: relative;
+}
+
+article {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+img {
+    border-radius: 50%;
+    position: absolute;
+    top: 78px;
+}
+
+button {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #786450;
+    border-radius: 30px;
+    padding: 0.3rem;
+    font-weight: bold;
+    width: 125px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #786450;
+}
+
+button:hover > a {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.perfil-title {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+
+.image-border-1 {
+    height: 98px;
+    width: 98px;
+    border-radius: 50%;
+    border-width: 2px;
+	border-style: solid;
+	border-color: #786450 transparent #786450 #786450;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.image-border-1:hover {
+    transform: rotate(180deg);
+}
+
+.image-border-2 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border-width: 2px;
+	border-style: solid;
+	border-color: #786450 #786450 #786450 transparent;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.image-border-2:hover {
+    transform: rotate(-360deg);
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+}
+
+.card {
+    height: 80%;
+    width: 80%;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.perfil {
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+}
+
+.status {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.status > div {
+    background-color: #F5E8DF;
+    height: 33%;
+    width: 100%;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.status > div:hover {
+    transition: all 1s;
+    background-color: rgb(219, 196, 172);
+}
+
+.status-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.status-text {
+    font-size: 0.7rem;
+}
