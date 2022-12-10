@@ -11,7 +11,21 @@
 <body class="display-flex">
     <main class="display-flex box">
         <section class="display-flex board box">
-            <article class="board-header"></article>
+            <article class="board-header">
+                <div class="display-flex board-header-display">
+                    <div class="board-header-btn-menu">
+                        <div class="header-btn-menu-top"></div>
+                        <div class="header-btn-menu-circle"></div>
+                        <div class="header-btn-menu-bottom"></div>
+                    </div>
+                    <div class="board-header-title">Notifications</div>
+                    <div class="board-header-btn-search">
+                        <div class="header-btn-search-circle"></div>
+                        <div class="header-btn-search-bar"></div>
+                    </div>
+                </div>
+                <input type="text" placeholder="     Search ..." class="board-header-search"></div>
+            </article>
             <article class="board-main">
                 <div class="main-line"></div>
 
@@ -45,5 +59,8 @@
             </article>
         </section>
     </main>
+
+    <script src="../../src/js/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

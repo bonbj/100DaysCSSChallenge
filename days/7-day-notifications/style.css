@@ -42,6 +42,7 @@ main {
     width: 100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    position: relative;
 }
 
 .board-main {
@@ -114,4 +115,97 @@ main {
 
 .text-box:hover > * {
     color: #5F98CD;
+}
+
+.board-header-title {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.board-header-btn-menu {
+    cursor: pointer;
+    height: 25px;
+    width: 33px;
+}
+
+.header-btn-menu-top {
+    height: 3px;
+    width: 20px;
+    background-color: #ffffff7c;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 27px;
+}
+
+.header-btn-menu-circle {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #ffffff7c;
+    position: absolute;
+    top: 18px;
+    left: 50px;
+}
+
+.board-header-display {
+    height: 100%;
+    justify-content: space-around;
+}
+
+.header-btn-menu-bottom {
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff7c;
+    border-radius: 3px;
+    position: absolute;
+    top: 35px;
+    left: 27px;
+}
+
+.board-header-btn-search {
+    position: relative;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.header-btn-search-circle {
+    height: 20px;
+    width: 20px;
+    border: 3px solid #ffffff7c;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.header-btn-search-bar {
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ffffff7c;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+
+.board-header-search {
+    transition: all 1s;
+    z-index: -1;
+    height: 30px;
+    opacity: 0;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    width: 0;
+    padding: 1.2rem;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.board-header-search-active {
+    width: 230px !important;
+    opacity: 1 !important;
+    z-index: 2;
 }
